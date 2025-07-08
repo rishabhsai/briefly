@@ -1,6 +1,6 @@
-# Vyyra
+# Briefly
 
-**Vyyra** is a kewl project
+**Briefly** is a kewl project
 
 ---
 
@@ -10,7 +10,7 @@
   Multiple AI agents analyze your content style and sentiment to curate a personalized newsletter.
 
 - **Your Voice, Amplified**  
-  Vyyra retains your unique tone, voice, and content rhythm, making the newsletter truly yours.
+  Briefly retains your unique tone, voice, and content rhythm, making the newsletter truly yours.
 
 - **Zero Effort Publishing**  
   No writing or formatting required—just connect your socials (LinkedIn, X/Twitter, Instagram, TikTok) and get your newsletter.
@@ -22,7 +22,7 @@
   Instantly see how your posts are transformed into a sleek newsletter.
 
 - **Testimonials**  
-  Hear from users who love how Vyyra makes their content shine.
+  Hear from users who love how Briefly makes their content shine.
 
 - **Sticky Call-to-Action**  
   Encourages users to try building their first newsletter for free—no credit card required.
@@ -35,7 +35,7 @@
    Link your LinkedIn, X (Twitter), Instagram, and TikTok accounts.
 
 2. **AI Analyzes Your Content**  
-   Vyyra’s agents understand your tone, style, and key themes.
+   Briefly's agents understand your tone, style, and key themes.
 
 3. **Generate Your Newsletter**  
    Get a polished, professional newsletter ready to share.
@@ -83,5 +83,5 @@ Built by [Kuberwastaken](https://github.com/Kuberwastaken) and collaborators.
 
 ---
 
-> “Where scattered thoughts become structured stories.”  
-> — Vyyra
+> "Where scattered thoughts become structured stories."
+> — Briefly
