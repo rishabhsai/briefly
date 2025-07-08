@@ -1,87 +1,37 @@
 # Vyyra
 
-**Vyyra** is a kewl project
+**Your Socials, Amplified by AI**
 
----
+Vyyra transforms your weekly social media activity into a stunning, ready-to-share newsletter—automatically. Experience a modern, interactive simulation where you can see how your posts, videos, and highlights come together in a beautiful recap, powered by AI.
 
 ## ✨ Features
+- **Interactive Newsletter Simulation:**
+  - Try out the newsletter builder with prefilled info for "Alex Kumar."
+  - Select which social media accounts (Twitter, Instagram, LinkedIn, YouTube) to include.
+  - Watch a smooth, animated loading bar as your newsletter is "generated."
+  - See a gorgeous, Notion-style newsletter preview—just like your audience would receive.
+- **AI-Powered Summaries:**
+  - (Planned) Summarize your top posts, milestones, and community highlights using AI.
+- **No Setup Required:**
+  - Play with the demo instantly—no sign-in, no API keys needed for the simulation.
 
-- **AI-Powered Digest**  
-  Multiple AI agents analyze your content style and sentiment to curate a personalized newsletter.
+## 👥 Who is Vyyra for?
+- **Creators:** Showcase your content and growth to your audience every week.
+- **Founders:** Keep investors and fans updated with your startup journey.
+- **Marketers:** Turn campaign results into beautiful, shareable reports.
+- **Communities:** Celebrate your members’ wins and keep everyone engaged.
 
-- **Your Voice, Amplified**  
-  Vyyra retains your unique tone, voice, and content rhythm, making the newsletter truly yours.
+## 🚀 Try the Demo
+1. Go to the "See Your Newsletter Come to Life" section on the homepage.
+2. Enter your name (or use "Alex Kumar"), select socials, and hit "Generate Newsletter."
+3. Enjoy the animated progress bar and see your newsletter appear!
 
-- **Zero Effort Publishing**  
-  No writing or formatting required—just connect your socials (LinkedIn, X/Twitter, Instagram, TikTok) and get your newsletter.
+## 🛠️ Local Development
+1. `npm install`
+2. `npm run dev`
 
-- **Export Anywhere**  
-  Download your newsletter in PDF, HTML, or Substack-ready formats with a single click.
-
-- **Live Newsletter Preview**  
-  Instantly see how your posts are transformed into a sleek newsletter.
-
-- **Testimonials**  
-  Hear from users who love how Vyyra makes their content shine.
-
-- **Sticky Call-to-Action**  
-  Encourages users to try building their first newsletter for free—no credit card required.
-
----
-
-## 🚀 How It Works
-
-1. **Connect Your Socials**  
-   Link your LinkedIn, X (Twitter), Instagram, and TikTok accounts.
-
-2. **AI Analyzes Your Content**  
-   Vyyra’s agents understand your tone, style, and key themes.
-
-3. **Generate Your Newsletter**  
-   Get a polished, professional newsletter ready to share.
+> **Note:** The `.env` file is excluded from git for your security. If you want to connect real APIs, add your keys locally.
 
 ---
 
-## 🛠️ Tech Stack
-
-- [Vite](https://vitejs.dev/) + [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- [shadcn/ui](https://ui.shadcn.com/) (Radix UI primitives)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [React Router](https://reactrouter.com/)
-- [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) for validation
-- [TanStack Query](https://tanstack.com/query/latest) for data fetching
-- [Lucide React](https://lucide.dev/) for icons
-
----
-
-## 🏁 Getting Started
-
-1. **Install dependencies:**
-   ```sh
-   npm install
-   ```
-
-2. **Start the development server:**
-   ```sh
-   npm run dev
-   ```
-
-3. **Open your browser:**  
-   Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
-
----
-
-## 📄 License
-
-MIT
-
----
-
-## 🙌 Credits
-
-Built by [Kuberwastaken](https://github.com/Kuberwastaken) and collaborators.
-
----
-
-> “Where scattered thoughts become structured stories.”  
-> — Vyyra
+Made with ❤️ for creators, founders, and storytellers. Amplify your voice with Vyyra.
