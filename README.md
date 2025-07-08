@@ -79,7 +79,7 @@ MIT
 
 ## 🙌 Credits
 
-Built by Vrishn Viswa , Rishab Sai , Fateen Ajaz Naqash
+Built by Rishabh Sai, Vrishn Viswa , Fateen Ajaz Naqash
 
 ---
 
