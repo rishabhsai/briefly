@@ -79,7 +79,7 @@ MIT
 
 ## 🙌 Credits
 
-Built by [Kuberwastaken](https://github.com/Kuberwastaken) and collaborators.
+Built by Rishabh Sai, Vrishn Viswa , Fateen Ajaz Naqash
 
 ---
 
