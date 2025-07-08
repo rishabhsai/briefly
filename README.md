@@ -1,8 +1,8 @@
-# Vyyra
+# Briefly
 
 **Your Socials, Amplified by AI**
 
-Vyyra transforms your weekly social media activity into a stunning, ready-to-share newsletter—automatically. Experience a modern, interactive simulation where you can see how your posts, videos, and highlights come together in a beautiful recap, powered by AI.
+Briefly transforms your weekly social media activity into a stunning, ready-to-share newsletter—automatically. Experience a modern, interactive simulation where you can see how your posts, videos, and highlights come together in a beautiful recap, powered by AI.
 
 ## ✨ Features
 - **Interactive Newsletter Simulation:**
@@ -15,7 +15,7 @@ Vyyra transforms your weekly social media activity into a stunning, ready-to-sha
 - **No Setup Required:**
   - Play with the demo instantly—no sign-in, no API keys needed for the simulation.
 
-## 👥 Who is Vyyra for?
+## 👥 Who is Briefly for?
 - **Creators:** Showcase your content and growth to your audience every week.
 - **Founders:** Keep investors and fans updated with your startup journey.
 - **Marketers:** Turn campaign results into beautiful, shareable reports.
@@ -34,4 +34,4 @@ Vyyra transforms your weekly social media activity into a stunning, ready-to-sha
 
 ---
 
-Made with ❤️ for creators, founders, and storytellers. Amplify your voice with Vyyra.
+Made with ❤️ for creators, founders, and storytellers. Amplify your voice with Briefly.
