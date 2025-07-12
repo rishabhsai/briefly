@@ -61,12 +61,22 @@
    npm install
    ```
 
-2. **Start the development server:**
+2. **Set up environment variables:**
+   Create a `.env` file in the root directory with the following variables:
+   ```env
+   # OpenAI API Key for newsletter generation
+   OPENAI_API_KEY=your_openai_api_key_here
+   
+   # RapidAPI Key for LinkedIn integration
+   RAPIDAPI_KEY=your_rapidapi_key_here
+   ```
+
+3. **Start the development server:**
    ```sh
    npm run dev
    ```
 
-3. **Open your browser:**  
+4. **Open your browser:**  
    Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
 
 ---
