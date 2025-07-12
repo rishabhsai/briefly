@@ -61,26 +61,51 @@
    npm install
    ```
 
-2. **Set up environment variables:**
+2. **Set up Supabase:**
+   - Create a new Supabase project at [supabase.com](https://supabase.com)
+   - Get your project URL and anon key from the project settings
+   - Copy the contents of `supabase-schema.sql` and run it in your Supabase SQL editor
+
+3. **Set up environment variables:**
    Create a `.env` file in the root directory with the following variables:
    ```env
    # OpenAI API Key for newsletter generation
    OPENAI_API_KEY=your_openai_api_key_here
    
-   # RapidAPI Key for LinkedIn integration
-   RAPIDAPI_KEY=your_rapidapi_key_here
+   # Supabase configuration
+   VITE_SUPABASE_URL=your_supabase_project_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
    
-   # Supabase (for database)
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key_here
+   # AssemblyAI API Key for audio transcription
+   ASSEMBLYAI_API_KEY=your_assemblyai_api_key_here
+   
+   # RapidAPI Key for social media scraping
+   RAPIDAPI_KEY=your_rapidapi_key_here
    ```
 
-3. **Start the development server:**
+4. **Deploy Edge Functions (optional - for production):**
+   ```sh
+   # Install Supabase CLI
+   npm install -g supabase
+   
+   # Login to Supabase
+   supabase login
+   
+   # Link your project
+   supabase link --project-ref your_project_ref
+   
+   # Deploy Edge Functions
+   supabase functions deploy scrape-socials
+   supabase functions deploy transcribe
+   ```
+
+5. **Start the development server:**
    ```sh
    npm run dev
    ```
 
-4. **Open your browser:**  
-   Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
+6. **Open your browser:**  
+   Visit [http://localhost:8080](http://localhost:8080) (or the port shown in your terminal).
 
 ---
 
