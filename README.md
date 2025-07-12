@@ -71,8 +71,9 @@
    - Create a new project or select existing one
    - Enable Gmail API and Google+ API
    - Create OAuth 2.0 credentials
-   - Add authorized redirect URIs:
+   - **IMPORTANT**: Add these exact redirect URIs to your OAuth 2.0 Client:
      - `http://localhost:8081/auth/callback` (for development)
+     - `https://your-project-ref.supabase.co/auth/v1/callback` (for Supabase)
      - `https://yourdomain.com/auth/callback` (for production)
    - Copy the Client ID and Client Secret to your `.env` file
 
@@ -119,7 +120,31 @@
    ```
 
 6. **Open your browser:**  
-   Visit [http://localhost:8080](http://localhost:8080) (or the port shown in your terminal).
+   Visit [http://localhost:8081](http://localhost:8081) (or the port shown in your terminal).
+
+---
+
+## 🔧 Troubleshooting Google OAuth
+
+If you get "Access blocked: This app's request is invalid":
+
+1. **Check Redirect URIs**: Ensure your Google OAuth client has these exact URIs:
+   ```
+   http://localhost:8081/auth/callback
+   https://your-project-ref.supabase.co/auth/v1/callback
+   ```
+
+2. **Verify Environment Variables**: Make sure `VITE_GOOGLE_CLIENT_ID` and `VITE_GOOGLE_CLIENT_SECRET` are correct
+
+3. **Enable Google Provider in Supabase**:
+   - Go to your Supabase Dashboard
+   - Navigate to Authentication → Providers
+   - Enable Google provider
+   - Enter your Google OAuth credentials
+
+4. **Check OAuth Consent Screen**:
+   - Ensure your app is properly configured
+   - Add test users if in testing mode
 
 ---
 
