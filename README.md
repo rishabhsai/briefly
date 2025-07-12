@@ -69,6 +69,9 @@
    
    # RapidAPI Key for LinkedIn integration
    RAPIDAPI_KEY=your_rapidapi_key_here
+   
+   # Supabase (for database)
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key_here
    ```
 
 3. **Start the development server:**
