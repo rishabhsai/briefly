@@ -13,7 +13,7 @@
   Briefly retains your unique tone, voice, and content rhythm, making the newsletter truly yours.
 
 - **Zero Effort Publishing**  
-  No writing or formatting required—just connect your socials (LinkedIn, X/Twitter, Instagram, TikTok) and get your newsletter.
+  No writing or formatting required—just connect your socials (LinkedIn, X, Instagram, YouTube) and get your newsletter.
 
 - **Export Anywhere**  
   Download your newsletter in PDF, HTML, or Substack-ready formats with a single click.
@@ -32,7 +32,7 @@
 ## 🚀 How It Works
 
 1. **Connect Your Socials**  
-   Link your LinkedIn, X (Twitter), Instagram, and TikTok accounts.
+   Link your LinkedIn, X, Instagram, and YouTube accounts.
 
 2. **AI Analyzes Your Content**  
    Briefly's agents understand your tone, style, and key themes.
