@@ -65,6 +65,16 @@
    - Create a new Supabase project at [supabase.com](https://supabase.com)
    - Get your project URL and anon key from the project settings
    - Copy the contents of `supabase-schema.sql` and run it in your Supabase SQL editor
+   
+   **Configure Google OAuth:**
+   - Go to [Google Cloud Console](https://console.cloud.google.com/)
+   - Create a new project or select existing one
+   - Enable Gmail API and Google+ API
+   - Create OAuth 2.0 credentials
+   - Add authorized redirect URIs:
+     - `http://localhost:8081/auth/callback` (for development)
+     - `https://yourdomain.com/auth/callback` (for production)
+   - Copy the Client ID and Client Secret to your `.env` file
 
 3. **Set up environment variables:**
    Create a `.env` file in the root directory with the following variables:
@@ -81,6 +91,10 @@
    
    # RapidAPI Key for social media scraping
    RAPIDAPI_KEY=your_rapidapi_key_here
+   
+   # Google OAuth for Gmail integration
+   VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
+   VITE_GOOGLE_CLIENT_SECRET=your_google_client_secret_here
    ```
 
 4. **Deploy Edge Functions (optional - for production):**
