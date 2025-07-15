@@ -1,164 +1,168 @@
-# Briefly
+# Briefly - AI-Powered Newsletter Generator
 
-**Briefly** is a kewl project
+Briefly is a React-based application that automatically generates newsletters from your social media posts using AI. It supports multiple platforms including LinkedIn, X, Instagram, and YouTube.
 
----
+## Features
 
-## ✨ Features
+- **Multi-Platform Integration**: Connect your LinkedIn, X, Instagram, and YouTube accounts
+- **AI-Powered Content**: Uses OpenAI GPT-4 to generate engaging newsletter content
+- **Authentication**: Secure user authentication with Clerk
+- **Database Storage**: Save and manage your newsletters with Supabase
+- **Modern UI**: Built with React, TypeScript, Tailwind CSS, and shadcn/ui
+- **Dark Mode**: Full dark mode support with theme toggle
 
-- **AI-Powered Digest**  
-  Multiple AI agents analyze your content style and sentiment to curate a personalized newsletter.
+## Tech Stack
 
-- **Your Voice, Amplified**  
-  Briefly retains your unique tone, voice, and content rhythm, making the newsletter truly yours.
+- **Frontend**: React 18 + TypeScript + Vite
+- **UI**: Tailwind CSS + shadcn/ui components
+- **Authentication**: Clerk
+- **Database**: Supabase (PostgreSQL)
+- **AI**: OpenAI GPT-4
+- **Social APIs**: RapidAPI for LinkedIn and X
+- **Styling**: CSS-in-JS with Tailwind
 
-- **Zero Effort Publishing**  
-  No writing or formatting required—just connect your socials (LinkedIn, X, Instagram, YouTube) and get your newsletter.
+## Getting Started
 
-- **Export Anywhere**  
-  Download your newsletter in PDF, HTML, or Substack-ready formats with a single click.
+### Prerequisites
 
-- **Live Newsletter Preview**  
-  Instantly see how your posts are transformed into a sleek newsletter.
+- Node.js 18+ 
+- npm, yarn, or bun
+- Supabase account
+- Clerk account
+- OpenAI API key
+- RapidAPI key (for LinkedIn and X integration)
 
-- **Testimonials**  
-  Hear from users who love how Briefly makes their content shine.
+### Installation
 
-- **Sticky Call-to-Action**  
-  Encourages users to try building their first newsletter for free—no credit card required.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd briefly
+   ```
 
----
-
-## 🚀 How It Works
-
-1. **Connect Your Socials**  
-   Link your LinkedIn, X, Instagram, and YouTube accounts.
-
-2. **AI Analyzes Your Content**  
-   Briefly's agents understand your tone, style, and key themes.
-
-3. **Generate Your Newsletter**  
-   Get a polished, professional newsletter ready to share.
-
----
-
-## 🛠️ Tech Stack
-
-- [Vite](https://vitejs.dev/) + [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- [shadcn/ui](https://ui.shadcn.com/) (Radix UI primitives)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [React Router](https://reactrouter.com/)
-- [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) for validation
-- [TanStack Query](https://tanstack.com/query/latest) for data fetching
-- [Lucide React](https://lucide.dev/) for icons
-
----
-
-## 🏁 Getting Started
-
-1. **Install dependencies:**
-   ```sh
+2. **Install dependencies**
+   ```bash
    npm install
    ```
 
-2. **Set up Supabase:**
-   - Create a new Supabase project at [supabase.com](https://supabase.com)
-   - Get your project URL and anon key from the project settings
-   - Copy the contents of `supabase-schema.sql` and run it in your Supabase SQL editor
-   
-   **Configure Google OAuth:**
-   - Go to [Google Cloud Console](https://console.cloud.google.com/)
-   - Create a new project or select existing one
-   - Enable Gmail API and Google+ API
-   - Create OAuth 2.0 credentials
-   - **IMPORTANT**: Add these exact redirect URIs to your OAuth 2.0 Client:
-     - `http://localhost:8081/auth/callback` (for development)
-     - `https://your-project-ref.supabase.co/auth/v1/callback` (for Supabase)
-     - `https://yourdomain.com/auth/callback` (for production)
-   - Copy the Client ID and Client Secret to your `.env` file
-
-3. **Set up environment variables:**
-   Create a `.env` file in the root directory with the following variables:
+3. **Set up environment variables**
+   Create a `.env` file in the root directory:
    ```env
-   # OpenAI API Key for newsletter generation
-   OPENAI_API_KEY=your_openai_api_key_here
-   
-   # Supabase configuration
-   VITE_SUPABASE_URL=your_supabase_project_url
+   # Clerk Configuration
+   VITE_CLERK_PUBLISHABLE_KEY=pk_test_your_clerk_key_here
+
+   # Supabase Configuration
+   VITE_SUPABASE_URL=your_supabase_url
    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   
-   # AssemblyAI API Key for audio transcription
-   ASSEMBLYAI_API_KEY=your_assemblyai_api_key_here
-   
-   # RapidAPI Key for social media scraping
-   RAPIDAPI_KEY=your_rapidapi_key_here
-   
-   # Google OAuth for Gmail integration
-   VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
-   VITE_GOOGLE_CLIENT_SECRET=your_google_client_secret_here
+
+   # OpenAI Configuration
+   VITE_OPENAI_API_KEY=your_openai_api_key
+
+   # RapidAPI Configuration
+   VITE_RAPIDAPI_KEY=your_rapidapi_key
    ```
 
-4. **Deploy Edge Functions (optional - for production):**
-   ```sh
+4. **Set up Supabase Database**
+   - Create a new Supabase project
+   - Run the SQL schema from `supabase-schema.sql` in your Supabase SQL editor
+   - Get your project URL and anon key from Settings > API
+
+5. **Set up Clerk Authentication**
+   - Create a new Clerk application
+   - Get your publishable key from the Clerk dashboard
+   - Configure your application settings
+
+6. **Deploy Supabase Edge Functions**
+   ```bash
    # Install Supabase CLI
    npm install -g supabase
-   
+
    # Login to Supabase
    supabase login
-   
+
    # Link your project
    supabase link --project-ref your_project_ref
-   
-   # Deploy Edge Functions
+
+   # Deploy functions
    supabase functions deploy scrape-socials
    supabase functions deploy transcribe
    ```
 
-5. **Start the development server:**
-   ```sh
+7. **Start the development server**
+   ```bash
    npm run dev
    ```
 
-6. **Open your browser:**  
-   Visit [http://localhost:8081](http://localhost:8081) (or the port shown in your terminal).
+   The app will be available at `http://localhost:8081`
 
----
+## Environment Variables
 
-## 🔧 Troubleshooting Google OAuth
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `VITE_CLERK_PUBLISHABLE_KEY` | Clerk publishable key for authentication | Yes |
+| `VITE_SUPABASE_URL` | Supabase project URL | Yes |
+| `VITE_SUPABASE_ANON_KEY` | Supabase anonymous key | Yes |
+| `VITE_OPENAI_API_KEY` | OpenAI API key for AI content generation | Yes |
+| `VITE_RAPIDAPI_KEY` | RapidAPI key for social media integration | Yes |
 
-If you get "Access blocked: This app's request is invalid":
+## Usage
 
-1. **Check Redirect URIs**: Ensure your Google OAuth client has these exact URIs:
-   ```
-   http://localhost:8081/auth/callback
-   https://your-project-ref.supabase.co/auth/v1/callback
-   ```
+1. **Sign In**: Use Clerk's authentication to sign in to the application
+2. **Connect Social Accounts**: Add your social media profile URLs
+3. **Generate Newsletter**: Click "Generate Newsletter" to create AI-powered content
+4. **Save & Share**: Save your newsletters to the database or copy content for manual sharing
 
-2. **Verify Environment Variables**: Make sure `VITE_GOOGLE_CLIENT_ID` and `VITE_GOOGLE_CLIENT_SECRET` are correct
+## API Endpoints
 
-3. **Enable Google Provider in Supabase**:
-   - Go to your Supabase Dashboard
-   - Navigate to Authentication → Providers
-   - Enable Google provider
-   - Enter your Google OAuth credentials
+### Supabase Edge Functions
 
-4. **Check OAuth Consent Screen**:
-   - Ensure your app is properly configured
-   - Add test users if in testing mode
+- `POST /functions/v1/scrape-socials`
+  - Body: `{ links: string[], timeRange: string }`
+  - Returns: `{ posts: Post[], newsletter: string }`
 
----
+- `POST /functions/v1/transcribe`
+  - Body: `{ url: string }`
+  - Returns: `{ text: string }`
 
-## 📄 License
+## Database Schema
 
-Apache License 2.0. See the [LICENSE](./LICENSE) file for details.
+### Users Table
+```sql
+CREATE TABLE users (
+  id UUID PRIMARY KEY,
+  created_at TIMESTAMP WITH TIME ZONE,
+  email TEXT UNIQUE NOT NULL,
+  name TEXT NOT NULL,
+  avatar_url TEXT
+);
+```
 
----
+### Newsletters Table
+```sql
+CREATE TABLE newsletters (
+  id UUID PRIMARY KEY,
+  created_at TIMESTAMP WITH TIME ZONE,
+  user_id UUID REFERENCES users(id),
+  title TEXT NOT NULL,
+  content TEXT NOT NULL,
+  social_links TEXT[],
+  time_range TEXT,
+  status TEXT CHECK (status IN ('draft', 'published'))
+);
+```
 
-## 🙌 Credits
+## Contributing
 
-Built by Rishabh Sai, Vrishn Viswa , Fateen Ajaz Naqash
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
 
----
+## License
 
-> "Where scattered thoughts become structured stories."
-> — Briefly
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support
+
+For support, please open an issue in the GitHub repository or contact the development team.
